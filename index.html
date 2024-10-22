@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outils Utilisés par l'Infirmier à l'Hôpital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Amiri', serif;
+        }
+        
+        body {
+            background-color: #eef2f6;
+            color: #333;
+            line-height: 1.8;
+            scroll-behavior: smooth;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid #005b99;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+        
+        section.content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        button.toggle-btn {
+            background-color: #007acc;
+            color: white;
+            padding: 15px;
+            margin: 15px 0;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.3em;
+            text-align: left;
+            transition: all 0.4s ease;
+        }
+        
+        button.toggle-btn:hover {
+            background-color: #005b99;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transform: scale(1.02);
+        }
+        
+        article {
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: #e6f3ff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        article h2 {
+            color: #005b99;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        h3 {
+            color: #007acc;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        h3:hover {
+            color: #003d66;
+        }
+        
+        p, ul li {
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            margin-left: 30px;
+        }
+        
+        ul li {
+            list-style-type: disc;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #005b99;
+            color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .visible {
+            display: block;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Les Outils Utilisés par l'Infirmier à l'Hôpital</h1>
+        <p>Un aperçu des principaux outils utilisés pour offrir des soins optimaux.</p>
+    </header>
+
+    <section class="content">
+        <button class="toggle-btn" data-target="section1">Instruments pour l'Administration de Médicaments</button>
+        <article id="section1" class="hidden">
+            <h2>1. Les Instruments pour l'Administration de Médicaments</h2>
+            <h3>1.1. Les Seringues et Aiguilles</h3>
+            <p>Les seringues et les aiguilles sont parmi les outils les plus couramment utilisés pour administrer des médicaments.</p>
+            <ul>
+                <li><strong>Seringues</strong> : disponibles en différentes tailles pour une administration précise.</li>
+                <li><strong>Aiguilles</strong> : choisies selon le type d'injection.</li>
+            </ul>
+            <h3>1.2. Les Perfusions Intraveineuses (IV)</h3>
+            <p>Les perfusions permettent d'administrer des liquides, médicaments ou nutriments directement dans le sang.</p>
+            <ul>
+                <li><strong>Cathéter IV</strong> : inséré dans une veine pour l'injection continue de fluides.</li>
+                <li><strong>Pompes à perfusion</strong> : contrôlent la quantité exacte de liquide administré.</li>
+            </ul>
+        </article>
+
+        <button class="toggle-btn" data-target="section2">Instruments de Soins des Plaies</button>
+        <article id="section2" class="hidden">
+            <h2>2. Les Instruments de Soins des Plaies</h2>
+            <h3>2.1. Ciseaux et Pinces</h3>
+            <p>Les ciseaux et les pinces sont essentiels pour la gestion des plaies.</p>
+            <ul>
+                <li><strong>Ciseaux à pansements</strong> : pour découper les bandages sans blesser le patient.</li>
+                <li><strong>Pinces anatomiques</strong> : pour manipuler les tissus sans les endommager.</li>
+            </ul>
+            <h3>2.2. Compresses et Bandages</h3>
+            <p>Utilisés pour couvrir et protéger les plaies après leur nettoyage.</p>
+            <ul>
+                <li><strong>Compresses stériles</strong> : pour nettoyer et protéger les plaies.</li>
+                <li><strong>Bandages</strong> : pour maintenir les compresses en place et favoriser la cicatrisation.</li>
+            </ul>
+        </article>
+
+        <button class="toggle-btn" data-target="section3">Outils de Surveillance de l’État de Santé du Patient</button>
+        <article id="section3" class="hidden">
+            <h2>3. Les Outils de Surveillance de l’État de Santé du Patient</h2>
+            <h3>3.1. Stéthoscope</h3>
+            <p>Permet d'écouter les bruits internes du corps comme le rythme cardiaque et la respiration.</p>
+            <h3>3.2. Thermomètre</h3>
+            <p>Utilisé pour surveiller la température corporelle du patient.</p>
+            <h3>3.3. Tensiomètre</h3>
+            <p>Mesure la pression artérielle du patient pour surveiller la circulation sanguine.</p>
+        </article>
+
+        <button class="toggle-btn" data-target="section4">Outils d'Hygiène et de Sécurité</button>
+        <article id="section4" class="hidden">
+            <h2>4. Les Outils d'Hygiène et de Sécurité</h2>
+            <h3>4.1. Gants Stériles</h3>
+            <p>Indispensables pour protéger contre les infections.</p>
+            <h3>4.2. Masques et Blouses</h3>
+            <p>Utilisés pour limiter le risque de contamination pendant les soins.</p>
+        </article>
+
+        <button class="toggle-btn" data-target="section5">Autres Outils Divers</button>
+        <article id="section5" class="hidden">
+            <h2>5. Autres Outils Divers</h2>
+            <h3>5.1. Chariot de Soins</h3>
+            <p>Un meuble roulant contenant les outils nécessaires pour effectuer les soins.</p>
+            <h3>5.2. Sondes et Cathéters</h3>
+            <p>Dispositifs utilisés pour évacuer des fluides ou surveiller des paramètres corporels.</p>
+        </article>
+
+        <footer>
+            <h2>Conclusion</h2>
+            <p>Les outils utilisés par les infirmiers sont essentiels pour garantir des soins de qualité et assurer la sécurité du patient.</p>
+        </footer>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection.classList.contains('visible')) {
+                        targetSection.classList.remove('visible');
+                        targetSection.classList.add('hidden');
+                    } else {
+                        targetSection.classList.remove('hidden');
+                        targetSection.classList.add('visible');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
